@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Java Script
+    </title>
+</head>
+<body>
+    
+    <script>
+      /*  var a;
+        a=10;
+        a="Pune";
+        let b;
+        b=10.40;
+        b=10;
+        b="Mumbai";
+        b='Mumbai'
+
+        var x,y;
+        let a=x+y;
+        a=x-y;
+        a=x/y;
+        a=x%y;
+        a=x*y;
+
+        var b=10;
+        b=20;
+        let b=20;
+        b=30;
+        const pi=3.14;
+        pi=pi+1;//wrong
+        pi=pi-1;//wrong
+
+
+        var b=10;
+        b="A"
+        var s=true;//1
+        s=false;//0
+        */
+        var b="Pune";
+        document.write(typeof b);
+        var c;//undefined
+        document.write("<br/>"+c);
+
+        //function
+        function show()
+        {
+            document.write("<br/>From Function");
+        }
+        show();
+        function withReturn()
+        {
+            return "Hello from return";
+        }
+        var ans=withReturn();
+        document.write("<br/>"+ans);
+
+        function withArgument(c)
+        {
+              document.write("<br/>"+c);  
+        }
+        withArgument("Ten");
+        function withArgumentWithReturn(c1,c2)
+        {
+            return c1+c2;
+        }
+        var s=withArgumentWithReturn(10,"World");
+        document.write("<br/>Answer = "+s+"</br>");
+
+        document.write("Hi"+(10+20));
+
+        10+20+(20+20)
+    </script>
+</body>
+</html>
