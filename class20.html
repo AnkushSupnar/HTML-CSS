@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>JavaScript Event</title>
+</head>
+<body>
+    <button onclick="alert('You Clicked')">click me</button>
+    <button onclick="alert(Date())">Show Time</button>
+    <br/>
+    <p id="p">Clock</p>
+    <button onclick="document.getElementById('p').innerHTML=Date()">Show Time</button>
+    <br/>
+    <button onclick="show()">call show function</button>
+
+
+
+    <script>
+        function show()
+        {
+            alert("Show Function Called");
+        }
+    </script>
+</body>
+</html>
