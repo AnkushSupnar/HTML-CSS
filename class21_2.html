@@ -1,28 +1,51 @@
 <!DOCTYPE html>
     <head>
         <title>Login Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     </head>
-    <body>
-        <form action="">
-            <label for="">User Name</label>
-            <input type="text" placeholder="Enter User Name" name="username" id="username">
-            <br/>
-            <label for="">Password</label>
-            <input type="password" name="password" id="password" placeholder="Enter You Password">
-            <br/>
-            <button onclick="login()">Login</button>
-            <button type="reset">Cancel</button>
+    <body class="">
+        
+            <div class="container mt-5">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">LOGIN</button>
+            </div>
+            <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Login Page</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="container mb-3">
+                            <label class=""for="">User Name</label>
+                            <input class="form-control w-100" type="text" placeholder="Enter User Name" name="username" id="username">                        
+                        </div>
+                        <div class="container mb-3">    
+                            <label class="" for="">Password</label>
+                            <input class="form-control w-100" type="password" name="password" id="password" placeholder="Enter You Password">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success m-3 " onclick="login()">Login</button>
+                        <button class="btn btn-danger" type="reset">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-            <script>
-                function login()
-                {
-                    var name=document.getElementById('username').value;
-                    var pass = document.getElementById('password').value;
-                    if(name=='Admin' && pass=='123'){
-                    alert("Login Success")
-                    }
-                }
-            </script>
-        </form>
+    <script>
+        function login()
+        {
+            var name=document.getElementById('username').value;
+            var pass = document.getElementById('password').value;
+            if(name=='Admin' && pass=='123'){
+            alert("Login Success")
+            }
+        }
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
     </body>
 </html>
