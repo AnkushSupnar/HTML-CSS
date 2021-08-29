@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>Javascript String</title>
+</head>
+<body>
+    
+
+
+    <script>
+     /*  let name='Newasa';
+       let dist="Ahmednagar";
+       console.log("City Name="+name.length);
+      console.log("Using Slice "+dist.slice(1,5))
+      console.log("Using Slice "+dist.slice(5))
+      console.log("Using Substring "+dist.substring(1,5))//substring(start index,end index)
+      console.log("Using substr "+dist.substr(1,5))//substr(starting index,length)
+*/
+let names="Amit,Suresh,Ramesh";
+
+console.log("Using IndexOf "+names.indexOf("Ramesh"))
+console.log("Using Last index "+names.lastIndexOf("Ramesh"))
+console.log("Using Last index "+names.lastIndexOf("Neha"))
+let mobile="9825547898";
+if(mobile.length!=10)
+{
+    console.log("mobile number invalid")
+}
+else
+{
+    console.log("Valide Mobile number");
+}
+let email="abc@gmail.computer"
+if(email.indexOf("@")==-1)
+{
+    console.log("Email is not valide");
+}
+else
+console.log("Email is valide");
+
+if(email.search("gmail")!=-1)
+{
+    console.log("Email from gmail")
+}
+else
+console.log("not from gmail")
+
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(email.match(mailformat))
+{
+    console.log("Valid Email");
+}
+else
+console.log("Invalid Email.")
+if(email.includes("gmail"))
+{
+    console.log("Gmail is include");
+}
+else
+console.log("Gamil not included")
+let name="Mrs. Amit";
+if(name.startsWith("Mr."))
+{
+    console.log("He is male")
+}
+else
+    console.log("She is female");
+
+name="Rahul dube1";
+if(name.endsWith("dube"))
+    console.log("In Familly");
+else
+    console.log("not in family");
+    </script>
+</body>
+</html>
